@@ -38,8 +38,8 @@ def GetExpiryDate(chat_id):
     return expires_at
 
 
-Owner_id = [555549602, 700923542]
-Member = [555549602, 700923542]
+Owner_id = [555549602, 700923542, 857158750]
+Member = [555549602, 700923542, 857158750]
 
 
 @pyrogram.Client.on_message()
