@@ -38,15 +38,15 @@ def GetExpiryDate(chat_id):
     return expires_at
 
 
-Owner_id = [555549602, 700923542, 857158750]
-Member = [555549602, 700923542, 857158750]
+Owner_id = [555549602, 700923542, 857158750, 356734835]
+Member = [555549602, 700923542, 857158750, 356734835]
 
 
 @pyrogram.Client.on_message()
 async def star(bot, update):
       if update.from_user.id not in Member:
-          await bot.send_message(chat_id=update.chat.id, text="Hi {} I am a renamer bot for specially [rohith](https://t.me/roHiTh_rio).Ask him to use me.".format(update.from_user.first_name),
-                              reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Father', url='https://t.me/roHiTh_rio')]]))
+          await bot.send_message(chat_id=update.chat.id, text="Hi {} I am a renamer bot for specially [rohith](https://t.me/MERAVITEJA).Ask him to use me.".format(update.from_user.first_name),
+                              reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('My Father', url='https://t.me/MERAVITEJA')]]))
       
       if update.from_user.id in Member:
        update.continue_propagation()
